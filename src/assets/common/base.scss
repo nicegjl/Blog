@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: Arial, "Microsoft YaHei";
+    overscroll-behavior: none;
+    overflow: hidden;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+ul,ol {
+    padding: 0;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: '';
+    height: 0;
+    display: block;
+    overflow: hidden;
+    height: 0;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.spine-player-controls {
+    display: none !important;
+}
+
+
+::-webkit-scrollbar{
+    width: get_vh(6px);
+    background-color: transparent;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: none;
+    border-radius: get_vh(10px);
+    background-color: transparent;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb{
+    border-radius: get_vh(10px);
+    -webkit-box-shadow: none;
+    background-color: rgba(51, 51, 51, 0.3);
+}
