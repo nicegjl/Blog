@@ -1,0 +1,30 @@
+
+.scale-out-enter-active,
+.scale-out-leave-active,
+.scale-in-enter-active,
+.scale-in-leave-active {
+  position: absolute; // 需要注意的地方
+  width: 100%; // 需要注意的地方，否则会出现页面渲染卡顿现象
+  will-change: transform;
+  transition: all 0.6s ease-out;
+}
+
+.scale-out-enter {
+  opacity: 0;
+  transform: scale3d(2, 2, 0);
+}
+
+.scale-out-leave-active {
+  opacity: 0;
+  transform: scale3d(1, 1, 0);
+}
+
+.scale-in-enter {
+  opacity: 0;
+  transform: scale3d(1, 1, 0);
+}
+
+.scale-in-leave-active {
+  opacity: 0;
+  transform: scale3d(2, 2, 0);
+}

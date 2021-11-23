@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Index from '@/views/index'
+import Scene from '@/views/scene';
+import Computer from '@/views/computer';
 
 Vue.use(Router)
 
@@ -10,8 +11,19 @@ export default new Router({
 	routes: [
 		{
 			path: '/',
-			name: 'Index',
-			component: Index
+			name: 'Scene',
+			component: Scene,
+      meta: {
+        depth: 0
+      },
+		},
+		{
+			path: '/computer',
+			name: 'Computer',
+			component: Computer,
+      meta: {
+        depth: 1
+      },
 		}
 	]
 })
