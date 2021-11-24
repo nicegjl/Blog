@@ -17,6 +17,8 @@ export default {
       options: {
         width: 1920,
         height: 1080,
+        bg: "sceneImgs/scene.jpeg",
+        size: 'cover',
       },
     };
   },
@@ -33,7 +35,7 @@ export default {
   .computer {
     width: 157px;
     height: 120px;
-    background-color: rgba(0, 0, 0, 0.4);
+    // background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 410px;
     left: 600px;
