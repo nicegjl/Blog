@@ -18,7 +18,7 @@ export default new Router({
       },
 		},
 		{
-			path: '/computer',
+			path: '/computer/*',
 			name: 'Computer',
 			component: Computer,
       meta: {

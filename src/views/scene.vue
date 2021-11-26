@@ -1,7 +1,7 @@
 <template>
   <div id="mainApp">
     <Scene :options="options">
-      <router-link to="/computer"><div class="computer"></div></router-link>
+      <router-link to="/computer/"><div class="computer"></div></router-link>
     </Scene>
   </div>
 </template>
